@@ -1,0 +1,14 @@
+{
+  "name": "esbuild-tree-shaking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "esbuild:build": "esbuild --bundle index.js > ./esbuild-output.js"
+  },
+  "dependencies": {
+    "esbuild": "0.14.36"
+  },
+  "author": "",
+  "license": "ISC"
+}
