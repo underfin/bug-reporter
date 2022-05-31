@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run esbuild:build && npm run webpack:build",
-    "esbuild:build": "esbuild --bundle  --splitting --format=esm src/index.js --outdir=dist",
+    "esbuild:build": "esbuild --bundle entry.js > ./esbuild-output.js",
     "webpack:build": "webpack bundle --entry ./entry.js -o ./webpack-output --mode development"
   },
   "dependencies": {
@@ -18,8 +18,5 @@
   "license": "ISC",
   "devDependencies": {
     "webpack-cli": "^4.9.2"
-  },
-  "sideEffects": [
-   
-  ]
+  }
 }
